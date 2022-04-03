@@ -31,15 +31,15 @@ words: Your Words
 author: Your Name
 
 # 中心图标选择男女或者自定义 | Gender
-gender: /img/male.png #/img/female.png
+gender: /img/favicon.png #/img/female.png
 
 # 站点小图标地址 | Small Icon of Your Site
-favicon: /img/favicon.ico
+favicon: /img/favicon.png
 
 # 菜单栏配置 | Nav Bar Settings
 menu:
-  关于我👀: /about
-  访问主站🎉: https://liuxunzhuo.tech
+  关于我🏃: /about
+  旧博客🎉: https://note.xblame.top
   GitHub🐒: https://github.com/xunzhuo
 
 

@@ -1,6 +1,15 @@
-
 <div class="hd">
     <ol class="breadcrumb">
+        <li><%- image_tag(theme.gender,{class: 'logopng', alt: 'logo'}) %></li>
+        <li>
+            <a href="/index.html"><i class="fa fa-home replay-btn" aria-hidden="true"></i></a>
+        </li>
+        <li><%= theme.logo_title %></li>
+        <!--
+        <li class="words" style="font-weight: bold;font-family: Georgia;"> 
+                <%= theme.words %> 
+        </li>
+        -->
         <% for (name in theme.menu) { %>
             <li><a class="ba" href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
         <% } %>
@@ -8,9 +17,14 @@
             <%- js('libs/jquery.min.js') %>
             <%- js('js/search.js') %>
             <% if (theme.search.enable) { %>
-                <form class="site-search-form">
-                    <i class="fa fa-search" id="search-logo"><input type="text" id="local-search-input" class="st-search-input" /></i>
-                </form>
+                <li>
+                    <form class="site-search-form">
+                        <i class="fa fa-search" id="search-logo"><input type="text" id="local-search-input" class="st-search-input" /></i>
+                    </form>
+                </li>
+                <div class="words" style="font-weight: bold;font-family: Georgia;"> 
+                        <%= theme.words %> 
+                </div>
                 <div id="local-search-result" class="local-search-result-cls"></div>
             <% } %>
             <script type="text/javascript" id="local.search.active">
